@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Lost and found</title>
+</head>
+<body>
+  <h1>Lost items</h1>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Name</th>
+    </tr>
+    {% for items in all_items %}
+      <tr>
+        <td>{{items.date}}</td>
+        <td><a href = "{% url 'home' items.id %}">{{items.name}}</a></td>
+      </tr>
+    {% endfor %}
+
+  </table>
+</body>
+</html>
