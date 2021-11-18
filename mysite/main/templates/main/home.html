@@ -1,11 +1,26 @@
-<h1>Lost item</h1>
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Name</th>
-  </tr>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+  <h1>Lost item</h1>
+  <table class="table table-hover">
     <tr>
-      <td>{{item.date}}</td>
-      <td>{{item.name}}</td>
+      <th>Date</th>
+      <th>Name</th>
+      <th>Details</th>
     </tr>
-</table>
+      <tr>
+        <td >{{ items.date }}</td>
+        <td>{{ items.name }}</td>
+        <td>{{ items.details }}</td>
+      </tr>
+  </table>
+</body>>
+</html>
